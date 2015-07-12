@@ -1,0 +1,37 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.1",
+  "scripts": {
+    "postinstall": "bower install --production --config.interactive=false && gulp build",
+    "start": "gulp watch",
+    "deploy:validation": "shipit validation deploy",
+    "deploy:preprod": "shipit preprod deploy",
+    "deploy:prod": "shipit prod deploy"
+  },
+  "dependencies": {
+    "bower": "*",
+    "coffee-script": "*",
+    "gulp": "*",
+    "gulp-angular-templatecache": "*",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-filter": "*",
+    "gulp-jade": "*",
+    "gulp-less": "*",
+    "gulp-plug": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-webserver": "*",
+    "main-bower-files": "^2.5.0",
+    "require-dir": "^0.1.0",
+    "wiredep": "*"
+  },
+
+  "devDependencies": {
+    "shipit-cli": "^1.2.1",
+    "shipit-deploy": "^2.0.0",
+    "shipit": "~0.1.16"
+  }
+}
